@@ -1,3 +1,17 @@
 {
-  "extends": "@arche/config-typescript/tsconfig.json"
+  "extends": "@arche/config-typescript/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "incremental": true,
+    "module": "esnext",
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

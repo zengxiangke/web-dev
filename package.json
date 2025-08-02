@@ -5,13 +5,11 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "pnpm audit"
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.11.0",
   "devDependencies": {
     "eslint": "9.32.0",
     "prettier": "^3.6.2",

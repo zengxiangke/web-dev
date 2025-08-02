@@ -1,0 +1,13 @@
+{
+  "name": "@arche/config-typescript",
+  "version": "1.0.0",
+  "description": "Base TypeScript configuration followed by all TypeScript projects in the monorepo",
+  "main": "./tsconfig.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0"
+}

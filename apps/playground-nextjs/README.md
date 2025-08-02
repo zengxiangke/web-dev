@@ -1,0 +1,1 @@
+# A Next.js Playground for testing and experimenting

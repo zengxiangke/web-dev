@@ -1,17 +1,14 @@
 {
-  "extends": "@arche/config-typescript/tsconfig.json",
+  "extends": "@arche/config-typescript",
   "compilerOptions": {
     "allowJs": true,
     "incremental": true,
     "module": "esnext",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "*": ["./@mf-types/*"]
+    }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

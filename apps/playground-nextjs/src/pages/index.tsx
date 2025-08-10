@@ -2,6 +2,7 @@ import {
   createInstance,
   type ModuleFederation,
 } from '@module-federation/runtime'
+import Provider from 'mf_provider'
 import React, { useState, type FC } from 'react'
 
 export default function IndexPage() {
@@ -27,8 +28,15 @@ export default function IndexPage() {
 
   async function onLoadMod() {
     getMF()
-      .loadRemote('mf_provider')
+      .loadRemote<{
+        default: typeof Provider
+      }>('mf_provider')
       .then((mod) => {
+        if (!mod) {
+          console.error('Failed to load remote module')
+          return
+        }
+
         console.log('Remote module loaded:', mod.default)
         setRemoteComponent(() => mod.default)
       })

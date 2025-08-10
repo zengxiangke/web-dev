@@ -13,12 +13,6 @@
 
     "noEmit": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "baseUrl": ".",
-    "paths": {
-      "#/*": ["./*"]
-    }
-  },
- 
+    "forceConsistentCasingInFileNames": true
+  }
 }
